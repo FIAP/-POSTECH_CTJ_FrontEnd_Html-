@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <title>Meu portfólio</title>
+</head>
+
+<body class="bg-secondary text-light">
+    <header class="bg-black">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Moni Hillman</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse flex-grow-0" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                        <li class="nav-item">
+                            <a class="nav-link text-light" aria-current="page" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Projetos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section class="d-lg-flex align-items-center justify-content-center text-center text-lg-start">
+        <div>
+            <h2>Moni Hillman</h2>
+            <p>Desenvolvedora front-end, instrutora, criadora de conteúdo e catmom.</p>
+        </div>
+        <img src="./imagem/desenvolvedora.png" class="img-fluid"
+            alt="uma mulher desenvolvedora usando uma camiseta amarela com um notebook no colo e de fundo temos algumas janelas de navegador" />
+    </section>
+    <section class="text-center mx-auto px-5 w-75 my-5">
+        <h2>Sobre mim</h2>
+        <p>Bacharela em Tecnologias Digitais, especialista em User Experience e pós graduanda em Docência e Performance
+            na Educação a Distância com experiência em suporte técnico de T.I e com tecnologias front-end. Durante a
+            graduação foi vice-presidente do diretório acadêmico e monitora de LIBRAS. Atualmente é instrutora na Alura.
+            Nas horas vagas gosta de assistir animes e produções da marvel, ouvir kpop e post-hardcore, jogar Valorant e
+            Genshin Impact e praticar culinária.</p>
+    </section>
+    <section class="w-50 mx-auto">
+        <h2 class="text-center">Habilidades</h2>
+        <ul class="row list-unstyled text-center">
+            <li class="col">
+                <img src="./imagem/Logo HTML.png" alt="Logo da tecnologia HTML" />
+                <h3>HTML</h3>
+            </li>
+            <li class="col">
+                <img src="./imagem/Logo CSS.png" alt="Logo da tecnologia CSS" />
+                <h3>CSS</h3>
+            </li>
+            <li class="col">
+                <img src="./imagem/Logo Javascript.png" alt="Logo da tecnologia Javascript" />
+                <h3>Javascript</h3>
+            </li>
+        </ul>
+    </section>
+    <section class="w-75 mx-auto my-5">
+        <h2 class="text-center">Projetos</h2>
+        <table border="1" rules="all" cellpadding="10" class="table table-bordered table-hover table-responsive">
+            <thead>
+                <tr align="left" class="table-dark">
+                    <th>Projeto</th>
+                    <th width="50%">Descrição</th>
+                    <th>Tecnologias</th>
+                </tr>
+            </thead>
+            <tbody class="bg-light text-black">
+                <tr>
+                    <td>
+                        AluraPlus
+                    </td>
+                    <td>
+                        Um site para divulgação da Alura Plus, uma plataforma de streaming com os conteúdos educacionais
+                        da Alura.
+                    </td>
+                    <td>
+                        HTML, CSS
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        AluraBooks
+                    </td>
+                    <td>Um site do e-commerce AluraBooks, uma livraria online de livros sobre tecnologia.</td>
+                    <td>HTML, CSS</td>
+                </tr>
+                <tr>
+                    <td>
+                        MoniBank
+                    </td>
+                    <td>Um banco virtual com serviços de cartão de crédito, débito e pessoa jurídica.</td>
+                    <td>HTML, CSS e JavaScript</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <section class="w-50 mx-auto">
+        <h2 class="text-center">Contato</h2>
+        <div class="row">
+            <form class="col-lg">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" id="nome" name="nome" required minlength="2" class="form-control" />
+
+                <label for="assunto">Assunto</label>
+                <input type="text" id="assunto" name="assunto" required minlength="2" class="form-control" />
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="teste@gmail.com" required minlength="5"
+                    class="form-control" />
+
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" placeholder="Escreva sua mensagem" required minlength="5" class="form-control"
+                    maxlength="280"></textarea>
+
+                <input type="submit" value="Enviar" class="btn btn-primary mt-3" />
+            </form>
+            <div class="col">
+                <ul>
+                    <li class="row align-items-center gap-3">
+                        <div class="col-1">
+                            <img src="./imagem/email.png" alt="Ícone de envelope" />
+                        </div>
+                        <div class="col">
+                            <p>Contate-me via e-mail</p>
+                            <p>loreipsum@loreipsum.com</p>
+                        </div>
+                    </li>
+                    <li class="row align-items-center gap-3">
+                        <div class="col-1">
+                            <img src="./imagem/tel.png" alt="ícone de telefone" />
+                        </div>
+                        <div class="col">
+                            <p>Contate-me via telefone</p>
+                            <p>(11) 0000-0000</p>
+                        </div>
+                    </li>
+                    <li class="row align-items-center gap-3">
+                        <div class="col-1">
+                            <img src="./imagem/pin.png" alt="ícone de localização" />
+                        </div>
+                        <div class="col">
+                            <p>Endereço comercial</p>
+                            <p>Rua fictícia, 655</p>
+                            <p>São Paulo / SP</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black d-lg-flex justify-content-around text-center mt-5 p-2">
+        <p>
+            2023 @ Desenvolvido por Moni Hillman | Projeto fictício sem fins comerciais
+        </p>
+        <ul class="d-flex justify-content-center list-unstyled gap-2">
+            <li>
+                <img src="./imagem/whatsapp.png" alt="ícone do whatsapp" />
+            </li>
+            <li>
+                <img src="./imagem/instagram.png" alt="ícone do instagram" />
+            </li>
+            <li>
+                <img src="./imagem/linkedin.png" alt="ícone do linkedin" />
+            </li>
+        </ul>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
